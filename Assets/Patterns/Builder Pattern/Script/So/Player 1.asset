@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 300b21d03866413591a008d07b251b96, type: 3}
+  m_Name: Player 1
+  m_EditorClassIdentifier: 
+  playerName: John
+  level: 27
+  experience: 55
+  prefab: {fileID: 936884360584241285, guid: 07d7b4fe1f8604e2db507970d1f7998e, type: 3}
