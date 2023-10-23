@@ -28,7 +28,7 @@ namespace Patterns.Builder_Pattern.Scripts.PlayMode
                     truckCar.ShowInfo(); 
                     break;
                 default:
-                    throw new ArgumentOutOfRangeException();
+                    throw new ("Invalid Model Type");
             }
             //Sedan tipinde bir araba oluşturmak için
 
