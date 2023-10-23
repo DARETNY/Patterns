@@ -30,9 +30,7 @@ namespace Patterns.Builder_Pattern.Scripts.PlayMode
                 default:
                     throw new ("Invalid Model Type");
             }
-            //Sedan tipinde bir araba oluşturmak için
 
-//Truck tipinde bir araba oluşturmak için
         }
     }
 
