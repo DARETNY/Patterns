@@ -23,8 +23,8 @@ namespace Patterns.Builder_Pattern.Scripts.PlayMode
                     break;
                 case ModelType.Jeep:
                     ICarBuılder jeepBuilder = new JeepModels();
-                    Car truckCar = jeepBuilder.Construct().SetModel().SetColor().GetCar();
-                    truckCar.ShowInfo(); 
+                    Car jeepCar = jeepBuilder.Construct().SetModel().SetColor().GetCar();
+                    jeepCar.ShowInfo(); 
                     break;
                 default:
                     throw new ("Invalid Model Type");
