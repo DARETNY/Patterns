@@ -18,7 +18,7 @@ namespace Patterns.Builder_Pattern.Scripts.PlayMode
             {
                 case ModelType.Sedan:
                     ICarBuılder sedanBuilder = new SedanModels();
-                    Car sedanCar = sedanBuilder.Construct().SetModel().SetColor().GetCar();
+                    Car sedanCar = sedanBuilder.Construct().SetModel().SetColor().SetSpeed().SetAcceleration().GetCar();
                     sedanCar.ShowInfo();
 
                     break;
