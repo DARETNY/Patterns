@@ -1,6 +1,6 @@
 namespace Patterns.Strategy_Pattern.script.Abstarct
 {
-    public abstract class WeponsBase // you can add monobehaviour here if you want to creat and use gun
+    public abstract class WeponsBase 
     {
         private IDodamage _dodamage;
         private readonly ushort _damage;

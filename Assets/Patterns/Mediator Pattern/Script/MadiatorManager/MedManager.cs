@@ -5,9 +5,9 @@ namespace Patterns.Mediator_Pattern.Script.MadiatorManager
 {
     public class MedManager : IMediator
     {
-        public Jumper Jumper1 { get; set; }
+        public Jumper Jumper1 { get; private set; }
 
-        public Rotater Slider1 { get; set; }
+        public Rotater Slider1 { get; private set; }
 
         public void SetterMed(Colleague colleague)
         {

@@ -1,3 +1,4 @@
+using System;
 using Patterns.Strategy_Pattern.script.Abstarct.DamageTypes;
 using Patterns.Strategy_Pattern.script.Commands;
 using UnityEngine;
@@ -10,12 +11,12 @@ namespace Patterns.Strategy_Pattern.script
         private MeleGun _mele;
 
         private const ushort Health = 100;
-        [SerializeField] private ChooseGun _chooseGun;
+        [SerializeField] private ChooseGun chooseGun;
 
 
         private void Awake()
         {
-            switch (_chooseGun)
+            switch (chooseGun)
             {
                 case ChooseGun.Rifle:
                     _rifleGun = new RifleGun(new IceDamage(), Health);
@@ -23,6 +24,8 @@ namespace Patterns.Strategy_Pattern.script
                 case ChooseGun.Mele:
                     _mele = new MeleGun(new ToxicDamage(), Health);
                     break;
+                default:
+                    throw new ("Invalid Model Type");
             }
         }
 
@@ -31,14 +34,11 @@ namespace Patterns.Strategy_Pattern.script
             CurrentHealth();
         }
 
-        bool İsAlive()
-        {
-            return CurrentHealth() > 0;
-        }
+        bool İsAlive() => CurrentHealth() > 0;
 
         private ushort CurrentHealth()
         {
-            return (ushort)(Health - (_chooseGun == ChooseGun.Rifle ? _rifleGun.TryAttack() : _mele.TryAttack()));
+            return (ushort)(Health - (chooseGun == ChooseGun.Rifle ? _rifleGun.TryAttack() : _mele.TryAttack()));
         }
 
 

@@ -8,8 +8,5 @@ namespace Patterns.Strategy_Pattern.script.Commands
         {
             base.SetDamagetype(dodamage);
         }
-
-
-        
     }
 }

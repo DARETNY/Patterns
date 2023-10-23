@@ -29,16 +29,13 @@ namespace Patterns.Mediator_Pattern.Script
                     _rotater.Dosomething();
                     break;
                 case < 0:
-                    if (!_checker)
-                    {
-                        _jumper.Dosomething();
-                    }
+                    if (!_checker) _jumper.Dosomething();
 
                     break;
             }
 
-            if (_medManager.Jumper1 != _jumper || !(target.localPosition.y > 5)) return;
-            Debug.Log("flyingggg");
+            if (_medManager.Jumper1 != _jumper || _medManager.Slider1 != _rotater) return;
+            Debug.Log("Matchhh");
 
 
             _checker = true;
