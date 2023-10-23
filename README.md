@@ -6,7 +6,7 @@ As a game developer, it's crucial to keep in mind the significance of software d
 In Unity, the Builder design pattern can be particularly useful when dealing with prefabs and object instantiation. Rather than setting the properties of a prefab step by step, the Builder pattern allows for the gradual construction of objects. This makes complex prefab structures more comprehensible and easier to maintain.
 
 ## Mediator Pattern
-Unity'de Mediator deseni, çok sayıda oyun nesnesi arasındaki etkileşimi yönetmek için kullanılabilir. Özellikle çoklu oyuncu oyunları veya büyük senaryolar için kullanışlıdır. Mediator, oyun nesneleri arasındaki iletişimi düzenler ve sıkı bağlantıları azaltır.
+In Unity, the Mediator pattern can be used to manage interactions between large numbers of game objects. It is especially useful for multiplayer games or large scenarios. Mediator streamlines communication between game objects and reduces tight couplings.
 
 ## Command Pattern
 Commands are frequently used to represent user interactions and in-game processes in Unity. The Command design pattern wraps a specific action as an object and uses it for processing. This is valuable for managing and sequencing in-game processes.
