@@ -1,4 +1,3 @@
-using System;
 using Patterns.Builder_Pattern.Scripts.Base;
 using Patterns.Builder_Pattern.Scripts.Command;
 using UnityEngine;
@@ -23,8 +22,8 @@ namespace Patterns.Builder_Pattern.Scripts.PlayMode
 
                     break;
                 case ModelType.Jeep:
-                    ICarBuılder truckBuilder = new JeepModels();
-                    Car truckCar = truckBuilder.Construct().SetModel().SetColor().GetCar();
+                    ICarBuılder jeepBuilder = new JeepModels();
+                    Car truckCar = jeepBuilder.Construct().SetModel().SetColor().GetCar();
                     truckCar.ShowInfo(); 
                     break;
                 default:
